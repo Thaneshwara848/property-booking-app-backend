@@ -32,3 +32,16 @@ cat /root/.ssh/id_rsa.pub >> /root/.ssh/authorized_keys
 chmod 600 /root/.ssh/authorized_keys
 cat /root/.ssh/id_rsa (copy this to github)
 #######################################################
+
+
+sudo systemctl status property-app
+
+
+sudo journalctl -u property-app -f
+
+
+curl http://localhost:9999/actuator/health
+
+sudo netstat -tulnp | grep 9999
+
+
