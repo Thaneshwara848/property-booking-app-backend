@@ -47,7 +47,7 @@ jobs:
             After=network.target
 
             [Service]
-            User=root
+            User={{ secrets.EC2_USER }}
             ExecStart=/usr/bin/java -Djava.net.preferIPv4Stack=true -jar /opt/property-app.jar
             SuccessExitStatus=143
             Restart=always
