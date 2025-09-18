@@ -40,7 +40,7 @@ jobs:
           key: ${{ secrets.EC2_KEY }}
           script: |
             sudo systemctl stop property-app || true
-            sudo mv /home/${{ secrets.EC2_USER }}/app/property-booking-app-0.0.1-SNAPSHOT.jar /opt/property-app.jar
+            sudo mv /home/${{ secrets.EC2_USER }}/app/target/property-booking-app-0.0.1-SNAPSHOT.jar /opt/property-app.jar
             sudo bash -c 'cat > /etc/systemd/system/property-app.service <<EOF
             [Unit]
             Description=Spring Boot Property App
