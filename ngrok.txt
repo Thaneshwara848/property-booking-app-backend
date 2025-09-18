@@ -53,5 +53,8 @@ GRANT ALL PRIVILEGES ON basic_tutorial.* TO 'springuser'@'localhost';
 FLUSH PRIVILEGES;
 EXIT;
 
-
-
+#######################################################
+sudo visudo
+indhuarunvel1988 ALL=(ALL) NOPASSWD: /bin/systemctl restart nginx
+indhuarunvel1988 ALL=(ALL) NOPASSWD: /bin/systemctl, /bin/mv, /bin/bash
+#######################################################
