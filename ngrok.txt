@@ -44,4 +44,14 @@ curl http://localhost:9999/actuator/health
 
 sudo netstat -tulnp | grep 9999
 
+#########################################################
+
+sudo mysql
+CREATE DATABASE IF NOT EXISTS basic_tutorial;
+CREATE USER IF NOT EXISTS 'springuser'@'localhost' IDENTIFIED BY 'springpass';
+GRANT ALL PRIVILEGES ON basic_tutorial.* TO 'springuser'@'localhost';
+FLUSH PRIVILEGES;
+EXIT;
+
+
 
