@@ -48,7 +48,7 @@ jobs:
 
             [Service]
             User=root
-            ExecStart=/usr/bin/java -jar /opt/property-app.jar
+            ExecStart=/usr/bin/java -Djava.net.preferIPv4Stack=true -jar /opt/property-app.jar
             SuccessExitStatus=143
             Restart=always
             RestartSec=10
