@@ -9,6 +9,8 @@ ngrok config add-authtoken 1Sq8nUiBW6PmjrJLTF1RWJbzHkY_LndRpPp2iTA1sjQNbNhG
 ngrok tcp 22
 ####################################################################################
 
+
+as soon i ubntu ---- > run .---> tab1 
 sudo apt update
 sudo apt install -y openjdk-17-jre-headless
 
